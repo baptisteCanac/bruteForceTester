@@ -10,6 +10,7 @@ const masterPswFifthLetter = letters[Math.floor(Math.random() * letters.length)]
 let masterPassword = masterPswFirstLetter + masterPswSecondLetter + masterPswThirdLetter + masterPswFourthLetter + masterPswFifthLetter
 
 function enterButton(){
+	console.log("good password : " + masterPassword)
 	let passwordEnter = document.getElementById("psw").value;
 	if (passwordEnter == masterPassword){
 		window.open("https://google.com")
